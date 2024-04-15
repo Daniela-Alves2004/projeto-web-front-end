@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+header {
+    
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    height: 40px;
+}
+
+
+form {
+    background-color: #959BFF;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+    height: 410px;
+    border-radius: 15px;
+    border: 1px solid black; 
+}
+
+.formulario-logar{
+    height: 230px;
+    margin: 50px auto;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+input{
+
+    width: 270px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px 15px;
+    
+}
+
+label {
+    text-align: left; 
+    font-size: 14px;
+    margin: 15px;
+}
+
+button{
+
+    margin: 10px 100px;
+    background-color: aliceblue;
+    border-radius: 17px;
+    padding: 10px;
+    width: 100px;
+    border-width: 1px;
+
+}
