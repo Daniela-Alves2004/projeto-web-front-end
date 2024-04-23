@@ -11,6 +11,11 @@ header {
     height: 40px;
 }
 
+header img {
+    height: 30px;
+    width: 100px;
+}
+
 
 form {
     background-color: #959BFF;
