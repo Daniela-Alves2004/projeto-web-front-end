@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px;
+    font-weight: 700;
+    font-family: "Inria Serif";
+    position: relative;
+    gap:18px;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.25);
+    background-color: #F9F9F9;
+
+}
+header .botao-login{
+    border: 1px solid #FD83FF;
+    border-radius: 30px;
+    font-size: 30px;
+    padding: 10px 35px 10px 35px ;
+    color:#FD83FF;
+    background-color: #FFFFFF;
+}
+header .botao-cadastrar{
+    border: 1px solid #FD83FF;
+    background-color: #FD83FF;
+    color: #FFFFFF;
+    border-radius: 30px;
+    font-size: 30px;
+    padding: 10px 25px 10px 25px ;
+}
+
+body{
+    background-color: #FEC1FF;
+    color: #000000;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0 50px 0;
+    font-family: "Inria Serif";
+    font-weight: 700;
+    font-size: 30px;
+}
+.section-pesquisa{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.bg-pesquisa{
+    background-color: #FFF84E;
+    width: 85%;
+    height: 150px;
+    padding: 20px;
+    top: 150px;
+    border-radius: 40px 0 0 40px ;
+    position: absolute;
+    left: 260px;
+    z-index: -1;
+}
+
+.div-pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.div-pesquisa input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 50px;
+    border: #000000 solid 1px;
+    border-radius: 30px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    border: #000000 solid 1px;
+    border-radius: 30px;
+    background-color: #959BFF;
+    color: #000;
+    font-size: 20px;
+}
+button:hover {
+    background-color: #F9F9F9;
+    color: #000;
+}
+
+.section-conteudo{
+    padding: 50px;
+    gap: 50px;
+
+}
+
+.section-conteudo .div-curso{
+    display:flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+.section-conteudo .div-curso .div-plano-negocio, .div-app,.div-pitch  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8535AB;
+    border-radius: 20px;
+    width: 400px;
+    height: 550px;
+    background-color: #FFFFFF;
+
+   
+}
+.section-conteudo .div-curso .div-plano-negocio span, .div-app span,.div-pitch span {
+    color: #FFFFFF;
+    background-color: #8535AB;
+    border-radius: 50px ;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+    gap: 10px;
+    
+}
+
+
+footer{
+    padding: 150px 0 150px 0;
+    background: #000000;
+    color: rgba(253, 131, 255, 1);
+    font-family: "Inria Serif";
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 35px;
+}
+footer .div-links{
+    display:flex;
+    flex-direction: column;
+    color: #FD83FF;
+    font-size: 25px;
+}
+.div-linkedin, .div-instagram, .div-email{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 15px 40px 0 0;
+    
+}
+.div-linkedin a, .div-instagram a, .div-email a{
+    color: #FD83FF;
+    text-decoration: none;
+}
