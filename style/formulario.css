@@ -1,77 +1,85 @@
 body{
-    
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
     color: aliceblue;
 }
 
-header {
-    
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    height: 40px;
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-header img {
-    margin-top: 5px;
-    height: 30px;
-    width: 100px;
-}
-
-
-form {
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     background-color: #959BFF;
-    margin: auto;
-    margin-top: 10px;
-    padding: 10px;
-    width: 300px;
-    height: 410px;
     border-radius: 15px;
     border: 1px solid black; 
+    width: 30vw;
+}
+.formulario-cadastrar {
+    margin-top: 80px;
+    height: 75vh;
 }
 
 .formulario-logar{
-    height: 270px;
-    margin: 50px auto;
-    font-size: 10px;
+    height: 45vh;
+    margin-top: 250px;
+    gap: 20px;
+
 }
 
-.input-group {
-    display: flex;
-    align-items: center;
-}
-
-.centralizada {
-    display: flex;
-    justify-content: center;
-}
-
-p{
+.primeiro-acesso{
+    text-decoration: none;
+    color: #FFFFFF;
     font-size: 20px;
-    text-align: center;
+    position: relative;
+    left: 32%;
+
+}
+p{
+    font-size: 50px;
+    position: relative;
+    left: 30%;
 }
 input{
-
-    width: 270px;
-    height: 30px;
     border-radius: 10px;
     border: none;
-    margin: 5px 15px;
-    
+    padding: 10px 50px 10px 80px ;
+    position: relative;
+    left: 10%;
+    font-size: 40px;
+
 }
 
 label {
-    text-align: left; 
-    font-size: 14px;
-    margin: 15px;
+    font-size: 35px;
+    position: relative;
+    left: 10%;
 }
 
-button{
-
-    margin: 10px 100px;
-    background-color: aliceblue;
-    border-radius: 17px;
-    padding: 10px;
-    width: 100px;
-    border-width: 1px;
-
+.botao-cadastrar{
+    background-color: #FFFFFF;
+    border: 1px solid black; 
+    border-radius: 30px ;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    position:relative ;
+    left: 35%;
+    
+}
+.botao-logar{
+    background-color: #FFFFFF;
+    border: 1px solid black; 
+    border-radius: 30px ;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    position:relative ;
+    left: 40%;
 }

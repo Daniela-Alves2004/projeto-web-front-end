@@ -9,35 +9,7 @@
     padding: 0;
     
 }
-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px;
-    font-weight: 700;
-    font-family: "Inria Serif";
-    position: relative;
-    gap:18px;
-    box-shadow: 0 1px rgba(0, 0, 0, 0.25);
-    background-color: #F9F9F9;
 
-}
-header .botao-login{
-    border: 1px solid #FD83FF;
-    border-radius: 30px;
-    font-size: 30px;
-    padding: 10px 35px 10px 35px ;
-    color:#FD83FF;
-    background-color: #FFFFFF;
-}
-header .botao-cadastrar{
-    border: 1px solid #FD83FF;
-    background-color: #FD83FF;
-    color: #FFFFFF;
-    border-radius: 30px;
-    font-size: 30px;
-    padding: 10px 25px 10px 25px ;
-}
 
 body{
     background-color: #FEC1FF;
@@ -62,6 +34,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 
 }
 
@@ -73,7 +46,8 @@ main{
     top: 150px;
     border-radius: 40px 0 0 40px ;
     position: absolute;
-    left: 260px;
+    left: 333px;
+    top: 200px;
     z-index: -1;
 }
 
@@ -134,10 +108,12 @@ button:hover {
     width: 400px;
     height: 550px;
     background-color: #FFFFFF;
+   
 
    
 }
-.section-conteudo .div-curso .div-plano-negocio span, .div-app span,.div-pitch span {
+.section-conteudo .div-curso .div-plano-negocio a, .div-app a,.div-pitch a {
+    text-decoration: none;
     color: #FFFFFF;
     background-color: #8535AB;
     border-radius: 50px ;
@@ -153,32 +129,3 @@ button:hover {
 }
 
 
-footer{
-    padding: 150px 0 150px 0;
-    background: #000000;
-    color: rgba(253, 131, 255, 1);
-    font-family: "Inria Serif";
-    font-weight: 700;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 35px;
-}
-footer .div-links{
-    display:flex;
-    flex-direction: column;
-    color: #FD83FF;
-    font-size: 25px;
-}
-.div-linkedin, .div-instagram, .div-email{
-    display:flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 15px 40px 0 0;
-    
-}
-.div-linkedin a, .div-instagram a, .div-email a{
-    color: #FD83FF;
-    text-decoration: none;
-}

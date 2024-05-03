@@ -1,0 +1,81 @@
+header { 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+header img {
+    margin-top: 5px; 
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px;
+    font-weight: 700;
+    font-family: "Inria Serif";
+    position: relative;
+    gap:18px;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.25);
+    background-color: #F9F9F9;
+
+}
+header .botao-login{
+    text-decoration: none;
+    border: 1px solid #FD83FF;
+    border-radius: 30px;
+    font-size: 30px;
+    padding: 10px 35px 10px 35px ;
+    color:#FD83FF;
+    background-color: #FFFFFF;
+}
+header .botao-cadastrar{
+    text-decoration: none;
+    border: 1px solid #FD83FF;
+    background-color: #FD83FF;
+    color: #FFFFFF;
+    border-radius: 30px;
+    font-size: 30px;
+    padding: 10px 25px 10px 25px ;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #F9F9F9;
+}
+.header-perfil{
+    padding: 20px 30px 5px 0;
+    font-family: "Inria Serif", serif;
+    font-weight: 700;
+}
+
+
+footer{
+    padding: 150px 0 150px 0;
+    background: #000000;
+    color: rgba(253, 131, 255, 1);
+    font-family: "Inria Serif";
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 35px;
+}
+footer .div-links{
+    display:flex;
+    flex-direction: column;
+    color: #FD83FF;
+    font-size: 25px;
+}
+.div-linkedin, .div-instagram, .div-email{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 15px 40px 0 0;
+    
+}
+.div-linkedin a, .div-instagram a, .div-email a{
+    color: #FD83FF;
+    text-decoration: none;
+}
