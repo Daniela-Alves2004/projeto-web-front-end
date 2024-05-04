@@ -7,8 +7,7 @@
 *{
     margin: 0;
     padding: 0;
-    
-    
+    overflow-x: hidden;    
 }
 
 .section-intro{
@@ -28,7 +27,7 @@
     
 }
 .section-intro .intro-texto h2{
-    font-size:80px;
+    font-size:60px;
     
 }
 .section-intro .intro-texto p{
@@ -41,8 +40,8 @@
 .section-intro .intro-texto a{
     border: 1px solid  #FD83FF;
     border-radius: 60px ;
-    width: 270px;
-    height:75px;
+    width: 250px;
+    height: 55px;
     background-color: #FD83FF;
     color: #FFFFFF;
     font-size: 35px;
@@ -158,4 +157,17 @@
     font-family: "Inria Serif";
     font-size: 30px;
 
+}
+
+.div-curso img{
+    width: 300px;
+    height: 300px;
+}
+
+.section-intro img{
+    width: 50%;
+}
+
+.section-motivacao img{
+    width: 30%;
 }
