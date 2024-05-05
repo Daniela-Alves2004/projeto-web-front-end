@@ -98,7 +98,7 @@ button:hover {
     justify-content: space-around;
     gap: 50px;
 }
-.section-conteudo .div-curso .div-plano-negocio, .div-app,.div-pitch  {
+.section-conteudo .div-curso, .div-plano-negocio, .div-app,.div-pitch  {
     display: flex;
     flex-direction: column;
     justify-content: center;
