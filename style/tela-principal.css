@@ -171,3 +171,10 @@
 .section-motivacao img{
     width: 30%;
 }
+
+
+a{
+    text-decoration: none;
+    
+    margin-left: 50px;
+}
