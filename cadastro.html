@@ -15,24 +15,30 @@
         <form class="formulario-cadastrar">
             <p>Bem-vindo(a)!</p>
             
-            <label>Nome:</label><br>
-            <input type="text"><br>
+            <label for="nome">Nome:</label><br>
+            <input id="nome" type="text"><br>
             
-            <label>Email:</label><br>
-            <input type="text"><br>
+            <label for="email">Email:</label><br>
+            <input id="email" type="text"><br>
             
             <label>Idade:</label><br>
-            <input type="number"><br>
+            <input id="idade" type="number"><br>
             
             <label>Senha:</label><br>
-            <input type="password"><br>
+            <input id ="senha" type="password"><br>
             
             <label>Confirmar Senha:</label><br>
-            <input type="password"><br>
+            <input id="confsenha" type="password"><br>
             
-            <a class="botao-cadastrar" href="logar.html">CADASTRO</a>
+            <a class="botao-cadastrar" id="botao-cadastrar" onclick="cadastrar()">CADASTRO</a>
             
         </form>
-    </main>    
+    </main>   
+
+        
+    </div>
+    
+    
+    <script src="./js/cadastrar.js"></script>
 </body>
 </html>
