@@ -19,6 +19,21 @@ header{
     background-color: #F9F9F9;
 
 }
+
+header .conteudo, .admin {
+    font-size: 25px;
+
+    color: #FD83FF;
+}
+
+header .conteudo:hover, .admin:hover{
+
+    background-color:rgba(244, 179, 252, 0.2);
+    padding: 5px;
+    border-radius: 15px;
+
+}
+
 header .botao-login{
     text-decoration: none;
     border: 1px solid #FD83FF;
@@ -27,7 +42,15 @@ header .botao-login{
     padding: 10px 35px 10px 35px ;
     color:#FD83FF;
     background-color: #FFFFFF;
+    cursor: pointer;
 }
+
+header .botao-login:hover{
+
+    background-color:#FD83FF;
+    color: white;
+}
+
 header .botao-cadastrar{
     text-decoration: none;
     border: 1px solid #FD83FF;
@@ -36,6 +59,12 @@ header .botao-cadastrar{
     border-radius: 30px;
     font-size: 30px;
     padding: 10px 25px 10px 25px ;
+}
+
+header .botao-cadastrar:hover{
+
+    color:#FD83FF;
+    background-color: #F9F9F9;
 }
 header{
     display: flex;
@@ -82,4 +111,8 @@ footer .div-links{
 .img-linkedin, .img-instagram, .img-email{
     width: 50px;
     height: 50px;
+}
+.margem-esquerda {
+    text-decoration: none;
+    margin-left: 80px;
 }
