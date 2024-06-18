@@ -1,7 +1,17 @@
-var usuarios = "";
+
+var usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
 
-function cadastrarDados(){
+var botao = document.querySelector(".botao-enviar");
+var formulario = document.querySelector(".formulario-admin");
+
+botao.addEventListener("click", function(event){
+    event.preventDefault();
+    enviarFormulario();
+    mostrarMensagens();
+});
+
+function enviarFormulario(){
 
     var nome = document.getElementById("nome");
     var email = document.getElementById("email");
@@ -57,27 +67,17 @@ function cadastrarDados(){
         mensagemErro.appendChild(divMensagem);
     }else{
 
-        let li = document.createElement("li");
-
-        let nomeValue = document.getElementById("nome").value;
-        let emailValue = document.getElementById("email").value;
-        let nomeValueUpper = nomeValue.toUpperCase();
-        let emailValueUpper = emailValue.toUpperCase();
-
-        let c1 = document.createTextNode(nomeValueUpper);
-        let c2 = document.createTextNode(emailValueUpper);
-
-
-        li.appendChild(c1);
-        li.appendChild(c2);
-
-        let itemLista = document.getElementById("itemLista");
-
-        itemLista.appendChild(li);
+        var id = usuarios.length + 1;
+        var data = new Date();
+        data = `${data.getDate()}/${data.getMonth() + 1}/${data.getFullYear()}`
 
         localStorage.setItem('nome',nome.value);
         localStorage.setItem('email',email.value);
+        localStorage.setItem('id',id);
+        localStorage.setItem('data',data);
 
+        adicionar(id, nome.value, email.value, data);
+        
         var divMensagem = document.createElement("div");
         divMensagem.style.backgroundColor = 'green';
         divMensagem.style.color = 'black';
@@ -98,23 +98,15 @@ function cadastrarDados(){
 
 }
 
+function adicionar(id, nome, email,data) {
 
-function mostrarLista (){
+    //adicionar contato
+    usuarios.push({id: id, nome: nome, email: email,data: data});
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
-    var lista = document.getElementById('lista');
+}
 
-    lista.innerHTML = '';
-
-    var elementos = document.createElement('div');
-
-    elementos.style.color = 'black';
-    
-    var nomeValor = localStorage.getItem(nome);
-    var emailValor = localStorage.getItem(email);
-
-    elementos.appendChild(nomeValor);
-    elementos.appendChild(emailValor);
-    lista.appendChild(elementos);
-
-
+//mostrar dados no console
+function mostrarMensagens() {
+    console.log(usuarios);
 }
