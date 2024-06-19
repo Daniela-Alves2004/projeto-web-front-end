@@ -96,3 +96,18 @@ label {
  
    
 }
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+}
+.botoes button{
+    padding: 10px 50px;
+    border: solid 1px #959BFF;
+    color: #959BFF;
+    background-color: transparent;
+    border-radius: 20px;
+    
+}

@@ -15,7 +15,7 @@
 
     <main>
 
-        <form class="formulario-admin">
+        <form class="formulario-admin" id="formulario-admin">
 
             <h2>ADMIN</h2>
             <label for="nome">Nome</label>
@@ -30,8 +30,12 @@
 
     <div id="mensagemErro"></div>
     <ul id="lista"></ul>
-  
-    
-    <script src="./js/admin.js"></script>
+    <div class="botoes">
+        <button type="button" onclick="excluirTodos()">Excluir todos</button>
+        <button type="button" onclick="excluirUm()">Excluir um item da lista</button>
+        <button type="button" onclick="limparFormulario()">Limpar</button> 
+    </div>
+     
+    <script src="./js/admin.js" defer></script>
 </body>
 </html>

@@ -9,6 +9,7 @@ botao.addEventListener("click", function(event){
     event.preventDefault();
     enviarFormulario();
     mostrarMensagens();
+   
 });
 
 function enviarFormulario(){
@@ -109,4 +110,33 @@ function adicionar(id, nome, email,data) {
 //mostrar dados no console
 function mostrarMensagens() {
     console.log(usuarios);
+}
+
+
+
+
+function excluirTodos() {
+    localStorage.clear();
+    usuarios = [];
+    mostrarMensagens();
+}
+
+
+function excluirUm() {
+    var idEcluir = prompt("Digite o id do usuário que deseja excluir");
+    var id = parseInt(idEcluir);
+    
+    var index = usuarios.findIndex(usuario => usuario.id === id);
+    
+    if (index !== -1) {
+        usuarios.splice(index, 1);
+        localStorage.removeItem(id.toString());
+        alert("Usuário excluído com sucesso!");
+        mostrarMensagens();
+    } else {
+        alert("Usuário não encontrado!");
+    }
+}
+function limparFormulario(){
+    document.getElementById("formulario-admin").reset();
 }
