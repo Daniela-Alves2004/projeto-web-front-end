@@ -8,7 +8,7 @@ var formulario = document.querySelector(".formulario-admin");
 botao.addEventListener("click", function(event){
     event.preventDefault();
     enviarFormulario();
-    mostrarMensagens();
+    mostrarLista();
    
 });
 
@@ -104,12 +104,40 @@ function adicionar(id, nome, email,data) {
     //adicionar contato
     usuarios.push({id: id, nome: nome, email: email,data: data});
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
-
+    mostrarLista();
 }
 
-//mostrar dados no console
-function mostrarMensagens() {
+function mostrarLista() {
     console.log(usuarios);
+
+    var itemLista = document.querySelector(".mostrar-lista ul");
+
+    itemLista.innerHTML = '';
+
+    usuarios.forEach(function(usuarios) {
+        var li = document.createElement("li");
+        
+        var idSpan = document.createElement("span");
+        idSpan.textContent = `ID: ${usuarios.id}`;        
+
+        var nomeSpan = document.createElement("span");
+        nomeSpan.textContent = `Nome: ${usuarios.nome}`;
+        nomeSpan.style.marginLeft = "30px"; 
+        
+        var emailSpan = document.createElement("span");
+        emailSpan.textContent = `Email: ${usuarios.email}`;
+        emailSpan.style.marginLeft = "30px"; 
+
+        var dataSpan = document.createElement("span");
+        dataSpan.textContent = `Data de envio: ${usuarios.data}`;
+        dataSpan.style.marginLeft = "30px";
+
+        li.appendChild(idSpan);
+        li.appendChild(nomeSpan);
+        li.appendChild(emailSpan);
+        li.appendChild(dataSpan);
+        itemLista.appendChild(li);
+    });
 }
 
 
@@ -118,7 +146,6 @@ function mostrarMensagens() {
 function excluirTodos() {
     localStorage.clear();
     usuarios = [];
-    mostrarMensagens();
 }
 
 
@@ -132,7 +159,7 @@ function excluirUm() {
         usuarios.splice(index, 1);
         localStorage.removeItem(id.toString());
         alert("Usuário excluído com sucesso!");
-        mostrarMensagens();
+        mostrarLista();
     } else {
         alert("Usuário não encontrado!");
     }
