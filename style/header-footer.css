@@ -22,15 +22,14 @@ header{
 
 header .conteudo, .admin {
     font-size: 25px;
-
+    padding-top: 15px;
     color: #FD83FF;
 }
 
 header .conteudo:hover, .admin:hover{
 
-    background-color:rgba(244, 179, 252, 0.2);
-    padding: 5px;
-    border-radius: 15px;
+    color:rgb(101, 19, 112);
+   
 
 }
 
@@ -39,7 +38,7 @@ header .botao-login{
     border: 1px solid #FD83FF;
     border-radius: 30px;
     font-size: 30px;
-    padding: 10px 35px 10px 35px ;
+    padding: 10px 30px 10px 30px ;
     color:#FD83FF;
     background-color: #FFFFFF;
     cursor: pointer;
@@ -58,7 +57,7 @@ header .botao-cadastrar{
     color: #FFFFFF;
     border-radius: 30px;
     font-size: 30px;
-    padding: 10px 25px 10px 25px ;
+    padding: 10px 30px 10px 30px ;
 }
 
 header .botao-cadastrar:hover{
@@ -114,5 +113,11 @@ footer .div-links{
 }
 .margem-esquerda {
     text-decoration: none;
-    margin-left: 80px;
+  
+}
+
+.cabeçalho{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
 }

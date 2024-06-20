@@ -10,6 +10,10 @@
      
 }
 
+body{
+    overflow-x: hidden;    
+}
+
 .section-intro{
     display: flex;
     flex-direction: row;
