@@ -3,12 +3,18 @@ var usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
 
 var botao = document.querySelector(".botao-enviar");
+var botaoPesquisa = document.querySelector(".botao-pesquisa");
 var formulario = document.querySelector(".formulario-admin");
 
 botao.addEventListener("click", function(event){
     event.preventDefault();
     enviarFormulario();
     mostrarLista();
+   
+});
+
+botaoPesquisa.addEventListener("click", function(event){
+    pesquisarCampo()
    
 });
 
@@ -141,10 +147,23 @@ function mostrarLista() {
 }
 
 
+function pesquisarCampo (){
+    
+    var buscaNome = document.getElementById("busca");
 
+    var index = usuarios.findIndex(usuario => usuario.nome === buscaNome.value);
+    
+    if (index !== -1) {
+        alert("Nome encontrado! " + usuarios[index].nome)
+        
+    } else {
+        alert("Nome não encontrado!");
+    }
+}
 
 function excluirTodos() {
     localStorage.clear();
+    alert("Lista excluída com sucesso!");
     usuarios = [];
 }
 
