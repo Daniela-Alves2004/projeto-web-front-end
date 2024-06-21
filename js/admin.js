@@ -197,6 +197,7 @@ function excluirTodos() {
     localStorage.clear();
     alert("Lista excluída com sucesso!");
     usuarios = [];
+    location.reload();
 }
 
 
