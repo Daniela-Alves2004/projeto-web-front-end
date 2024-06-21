@@ -1,35 +1,46 @@
-# Projeto Meninas Digitais 
 
-Este repositório contém o código-fonte da Plataforma Interativa do Projeto Meninas Digitais. O objetivo desta plataforma é auxiliar na localização de conteúdos relevantes para aplicação na mentoria no Projeto Meninas Digitais. Este serviço web oferece de forma objetiva recursos como tutoriais, links de conteúdos educacionais, exemplos de projetos e dicas para o desenvolvimento de projetos para a competição Technovation Girls.
+# Project Meninas Digitais
 
-## Funcionalidades
+This repository contains the source code for the Interactive Platform of the Digital Girls Project. The objective of this platform is to assist in locating relevant content for use in mentoring within the Digital Girls Project. This web service offers resources such as tutorials, links to educational content, project examples, and tips for developing projects for the Technovation Girls competition in an objective manner.
 
-Login e Cadastro:
-- Página de Login: Permite que usuários registrados façam login.
-- Página de Cadastro: Permite que novos usuários se cadastrem na plataforma.
-- Autenticação: Utiliza o Local Storage para armazenar tokens de autenticação.
-  
-Página Principal:
+This is the link for your access to the website: https://daniela-alves2004.github.io/projeto-web-front-end/
 
-- Descrição do Projeto: Apresenta uma visão geral do Projeto Meninas Digitais.
-- Conteúdos em Destaque: Lista de recursos e conteúdos mais relevantes.
+## Functionalities
 
-Página de Conteúdos:
+Login and Registration:
 
-- Conteúdos: Navegação por diferentes categorias de recursos, como tutoriais, links educacionais, exemplos de projetos, etc.
+Login Page: Allows registered users to log in.
+Registration Page: Allows new users to register on the platform.
+Authentication: Uses Local Storage to store authentication tokens.
 
-Página de Detalhes do Conteúdo:
+Main Page:
 
-- Apresenta uma descrição detalhada do conteúdo selecionado.
+Project Description: Provides an overview of the Digital Girls Project.
+Featured Content: List of the most relevant resources and content.
 
-### Tecnologias Utilizadas
-- Frontend:  HTML5, CSS3 e Javascript
-- Autenticação: JWT (JSON Web Tokens), armazenados no Local Storage
+Content Page:
 
-### Desenvolvedoras:
+Content: Navigation through different categories of resources, such as tutorials, educational links, project examples, etc.
 
--  Brena Freitas dos Santos
+Content Details Page:
 
--  Daniela Dos Santos Alves
+Presents a detailed description of the selected content.
+## Features
 
--  Maria Fernanda de Abreu Aguiar 
+- ????
+
+
+## Tech Stack
+
+**Frontend:** HTML5, CSS3 e JavaScript
+
+**Autenticação:** JWT (JSON Web Tokens), armazenados no Local Storage
+
+
+## Authors
+
+- Brena Freitas dos Santos [Github](https://github.com/Daniela-Alves2004) [Linkedin](https://www.linkedin.com/in/brena-dos-santos-freitas-23540130b/)
+
+- Daniela Dos Santos Alves [Github](https://github.com/Daniela-Alves2004) [Linkedin](https://www.linkedin.com/in/daniela-dos-santos-alves/)
+
+- Maria Fernanda de Abreu Aguiar [Github](https://github.com/MariaFernandaAguiar) [Linkedin](https://www.linkedin.com/in/maria-fernanda-aguiar-9120b020b/)
