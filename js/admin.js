@@ -147,19 +147,51 @@ function mostrarLista() {
 }
 
 
-function pesquisarCampo (){
-    
-    var buscaNome = document.getElementById("busca");
+function pesquisarCampo() {
+    var buscaNome = document.getElementById("busca").value;
+    var usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    var index = usuarios.findIndex(usuario => usuario.nome === buscaNome.value);
-    
+    var index = usuarios.findIndex(usuario => usuario.nome.toUpperCase() === buscaNome.toUpperCase());
+
     if (index !== -1) {
-        alert("Nome encontrado! " + usuarios[index].nome)
-        
+        alert("Nome encontrado! " + usuarios[index].nome);
     } else {
         alert("Nome não encontrado!");
     }
+
+    console.log(usuarios);
+
+    var itemLista = document.querySelector(".mostrar-lista ul");
+    itemLista.innerHTML = '';
+
+    usuarios.forEach(function(usuario) {
+        if (usuario.nome.toUpperCase() === buscaNome.toUpperCase()) {
+            var li = document.createElement("li");
+
+            var idSpan = document.createElement("span");
+            idSpan.textContent = `ID: ${usuario.id}`;
+
+            var nomeSpan = document.createElement("span");
+            nomeSpan.textContent = `Nome: ${usuario.nome}`;
+            nomeSpan.style.marginLeft = "30px";
+
+            var emailSpan = document.createElement("span");
+            emailSpan.textContent = `Email: ${usuario.email}`;
+            emailSpan.style.marginLeft = "30px";
+
+            var dataSpan = document.createElement("span");
+            dataSpan.textContent = `Data de envio: ${usuario.data}`;
+            dataSpan.style.marginLeft = "30px";
+
+            li.appendChild(idSpan);
+            li.appendChild(nomeSpan);
+            li.appendChild(emailSpan);
+            li.appendChild(dataSpan);
+            itemLista.appendChild(li);
+        }
+    });
 }
+
 
 function excluirTodos() {
     localStorage.clear();
