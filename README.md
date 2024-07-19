@@ -25,10 +25,6 @@ Content: Navigation through different categories of resources, such as tutorials
 Content Details Page:
 
 Presents a detailed description of the selected content.
-## Features
-
-- ????
-
 
 ## Tech Stack
 
